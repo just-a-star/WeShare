@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('note_shares', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->uuid('note_id')->constrained()->onDelete('cascade');
+            $table->uuid('note_id');
             $table->timestamps();
             $table->foreign('note_id')->references('id')->on('notes')->onDelete('cascade');
             
