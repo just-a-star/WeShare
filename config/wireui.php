@@ -59,10 +59,6 @@ return [
         |
      */
     'components' => [
-        'alert' => [
-            'class' => Components\Alert::class,
-            'alias' => 'alert',
-        ],
         'avatar' => [
             'class' => Components\Avatar::class,
             'alias' => 'avatar',
@@ -71,10 +67,10 @@ return [
             'class' => Components\Icon::class,
             'alias' => 'icon',
         ],
-        // 'icon.spinner' => [
-        //     'class' => Components\Icons\Spinner::class,
-        //     'alias' => 'icon.spinner',
-        // ],
+        'icon.spinner' => [
+            'class' => Components\Icons\Spinner::class,
+            'alias' => 'icon.spinner',
+        ],
         'color-picker' => [
             'class' => Components\ColorPicker::class,
             'alias' => 'color-picker',
@@ -203,6 +199,5 @@ return [
             'class' => Components\Dialog::class,
             'alias' => 'dialog',
         ],
-
     ],
 ];
