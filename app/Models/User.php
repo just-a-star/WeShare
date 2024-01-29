@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -47,13 +46,4 @@ class User extends Authenticatable
         return $this->hasMany(Note::class);
     }
 
-    // $note->user()
-
-    // auth()->user()->notes()->create([
-    //     'title' => 'My first note',
-    //     'content' => 'This is the content of my first note',
-    //     'is_public' => true,
-    //     'is_published' => true,
-    //     'send_date' => now(),
-    // ]);
 }
