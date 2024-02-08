@@ -1,0 +1,13 @@
+@media (min-width: 1020px) {
+    .bg-hero {
+        width: 1000px;
+        height: 300px;
+        left: 30%;
+        position: absolute;
+        top: 13rem;
+        border-top-left-radius: 9999px;
+        border-bottom-left-radius: 9999px;
+        --tw-bg-opacity: 1;
+        background-color: rgba(245, 40, 145, 0.1);
+    }
+}
