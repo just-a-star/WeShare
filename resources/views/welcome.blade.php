@@ -53,7 +53,8 @@
                 <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
                     <div class="bg-hero"></div>
                     <img src="{{ asset('images/notes.svg') }}"
-                        class="relative z-10 overflow-x-visible lg:top-24 xl:top-0 xl:w-3/4" overflow-x-visible>
+                        class="relative z-10 overflow-x-visible opacity-90 lg:top-24 xl:top-0 xl:w-3/4"
+                        overflow-x-visible>
 
                 </div>
 
