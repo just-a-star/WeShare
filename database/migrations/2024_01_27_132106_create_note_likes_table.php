@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('note_likes', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
             $table->uuid('note_id');
             $table->uuid('user_id');
+            $table->timestamps();
             $table->foreign('note_id')->references('id')->on('notes')->onDelete('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
