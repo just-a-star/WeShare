@@ -9,7 +9,8 @@ use Illuminate\Database\Eloquent\Model;
 class Note extends Model
 {
     use HasFactory, HasUuids;
-
+    protected $primaryKey = 'id';
+    protected $keyType = 'string';
     protected $fillable = [
         'title',
         'content',
