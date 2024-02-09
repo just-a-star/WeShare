@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->uuid('note_id');
-            $table->unsignedBigInteger('user_id');
+            $table->uuid('user_id');
             $table->foreign('note_id')->references('id')->on('notes')->onDelete('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });

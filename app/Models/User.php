@@ -17,6 +17,8 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    protected $primaryKey = 'id';
+    protected $keyType = 'string';
     protected $fillable = [
         'name',
         'email',
@@ -47,13 +49,4 @@ class User extends Authenticatable
         return $this->hasMany(Note::class);
     }
 
-    // $note->user()
-
-    // auth()->user()->notes()->create([
-    //     'title' => 'My first note',
-    //     'content' => 'This is the content of my first note',
-    //     'is_public' => true,
-    //     'is_published' => true,
-    //     'send_date' => now(),
-    // ]);
 }
