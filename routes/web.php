@@ -23,7 +23,11 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
+Route::view('notes', 'notes.index')
+    ->middleware(['auth'])
+    ->name('notes.index');
+
 // Route::resource('users', UserController::class)
 //     ->middleware(['auth', 'verified']);
-    
+
 require __DIR__.'/auth.php';
