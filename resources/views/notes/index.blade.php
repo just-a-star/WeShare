@@ -6,7 +6,7 @@
     </x-slot>
 
     @php
-        $notes = Auth::user()->notes()->get();
+    $notes = Auth::user()->notes()->get();
 
     @endphp
     <div class="py-12">
